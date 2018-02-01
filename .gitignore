@@ -1,0 +1,8 @@
+.idea/
+.idea/*
+var/logs/*
+app/config/*
+vendor/*
+composer.lock
+!var/logs/.gitkeep
+!app/config/*.dist

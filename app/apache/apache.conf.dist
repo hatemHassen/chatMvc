@@ -1,0 +1,14 @@
+Define PRJ_PATH <PATH_TO_YOUR_PROJECT>
+<VirtualHost *:80>
+    DocumentRoot ${PRJ_PATH}/web
+    serverName chat.localhost
+    <Directory ${PRJ_PATH}/web>
+        Options FollowSymLinks Indexes
+        AllowOverride ALL
+        Order Allow,Deny
+        Allow from All
+		Require all granted
+    </Directory>
+    ErrorLog ${PRJ_PATH}/var/logs/error.log
+    CustomLog ${PRJ_PATH}/var/logs/access.log combined
+</VirtualHost>

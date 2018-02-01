@@ -1,0 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: hatem
+ */
+
+
+class Config
+{
+    final public static function getDbConfig()
+    {
+        return array(
+            "db_dsn" => "mysql:dbname=db_tchat;host=localhost",
+            "db_user" => "root",
+            "db_pwd" => "Pr0xym-1T",
+        );
+    }
+}
